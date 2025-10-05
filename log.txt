@@ -1,0 +1,808 @@
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
++ MIDI_SRC='/mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES'
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
++ GIT_REPO=/mnt/c/Users/mike/Documents/gml-workspace/gml-MotifMatrix
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
++ echo '=== Changing to MIDI source: /mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES ==='
+=== Changing to MIDI source: /mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES ===
+++ __git_ps1
+++ local exit=0
+++ local pcmode=no
+++ local detached=no
+++ local 'ps1pc_start=\u@\h:\w '
+++ local 'ps1pc_end=\$ '
+++ local 'printf_format= (%s)'
+++ case "$#" in
+++ printf_format=' (%s)'
+++ local ps1_expanded=yes
+++ '[' -z '' ']'
+++ '[' -z '5.2.37(1)-release' ']'
+++ shopt -q promptvars
+++ local repo_info rev_parse_exit_code
++++ git rev-parse --git-dir --is-inside-git-dir --is-bare-repository --is-inside-work-tree --show-ref-format --short HEAD
+++ repo_info='.git
+false
+false
+true
+files
+b4dd63b'
+++ rev_parse_exit_code=0
+++ '[' -z '.git
+false
+false
+true
+files
+b4dd63b' ']'
+++ local 'LF=
+'
+++ local short_sha=
+++ '[' 0 = 0 ']'
+++ short_sha=b4dd63b
+++ repo_info='.git
+false
+false
+true
+files'
+++ local ref_format=files
+++ repo_info='.git
+false
+false
+true'
+++ local inside_worktree=true
+++ repo_info='.git
+false
+false'
+++ local bare_repo=false
+++ repo_info='.git
+false'
+++ local inside_gitdir=false
+++ local g=.git
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ local sparse=
+++ '[' -z '' ']'
+++ '[' -z '' ']'
++++ git config --bool core.sparseCheckout
+++ '[' '' = true ']'
+++ local r=
+++ local b=
+++ local step=
+++ local total=
+++ '[' -d .git/rebase-merge ']'
+++ '[' -d .git/rebase-apply ']'
+++ '[' -f .git/MERGE_HEAD ']'
+++ __git_sequencer_status
+++ local todo
+++ test -f .git/CHERRY_PICK_HEAD
+++ test -f .git/REVERT_HEAD
+++ __git_eread .git/sequencer/todo todo
+++ test -r .git/sequencer/todo
+++ return 1
+++ '[' -f .git/BISECT_LOG ']'
+++ '[' -n '' ']'
+++ '[' -h .git/HEAD ']'
+++ local head=
+++ case "$ref_format" in
+++ __git_eread .git/HEAD head
+++ test -r .git/HEAD
+++ IFS='
+'
+++ read -r head
+++ case $head in
+++ head=refs/heads/main
+++ test -z refs/heads/main
+++ b=refs/heads/main
+++ '[' -n '' ']'
+++ local conflict=
+++ '[' '' = yes ']'
+++ local w=
+++ local i=
+++ local s=
+++ local u=
+++ local h=
+++ local c=
+++ local p=
+++ local upstream=
+++ '[' true = false ']'
+++ '[' true = true ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ local 'z= '
+++ b=main
+++ '[' no = yes ']'
+++ '[' -n '' ']'
+++ local f=
+++ local gitstring=main
+++ '[' no = yes ']'
+++ printf -- ' (%s)' main
+++ return 0
++ cd '/mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES'
+bash: cd: /mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES: No such file or directory
++ echo 'ERROR: Cannot cd to /mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES'
+ERROR: Cannot cd to /mnt/c/Users/mike/Documents/STRING QUARTET MIDI FILES
++ sleep 10
+
